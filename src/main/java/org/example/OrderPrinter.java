@@ -11,6 +11,5 @@ public class OrderPrinter {
 
     public OrderPrinter(Order order) {
         this.order = order;
-        System.out.println(this.order.getOrderPositionList().stream().map(p -> p.getId()).collect(Collectors.toList()));
     }
 }

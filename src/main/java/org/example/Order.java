@@ -2,13 +2,15 @@ package org.example;
 
 import org.springframework.context.annotation.Bean;
 
+import java.sql.Date;
 import java.util.List;
 
 public class Order {
 
     private long id;
     private String comment;
-    private List<OrderPosition> orderPositionList;
+    private double price;
+    private Date date;
 
     public void setId(long id) {
         this.id = id;
@@ -26,11 +28,19 @@ public class Order {
         return comment;
     }
 
-    public List<OrderPosition> getOrderPositionList() {
-        return orderPositionList;
+    public double getPrice() {
+        return price;
     }
 
-    public void setOrderPositionList(List<OrderPosition> orderPositionList) {
-        this.orderPositionList = orderPositionList;
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 }

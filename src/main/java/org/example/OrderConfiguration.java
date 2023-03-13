@@ -13,7 +13,6 @@ public class OrderConfiguration {
         final var order = new Order();
         order.setId(1L);
         order.setComment("Hello world");
-        order.setOrderPositionList(orderPositionList);
         return order;
     }
 
